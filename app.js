@@ -52,5 +52,23 @@ exercise(3);
 let scoreLog = users.map((user) => {
   return { name: user.name, score: user.score };
 });
-
 console.log(scoreLog);
+
+exercise(4);
+
+let onlyActive = users.filter((user) => user.isActive == true);
+console.log(onlyActive);
+
+exercise(5);
+
+let usersDescending = users.sort(compareScores);
+function compareScores(a, b) {
+  if (a.score > b.score) {
+    return -1;
+  } else if (a.score < b.score) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+console.log(usersDescending);
