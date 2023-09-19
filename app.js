@@ -72,3 +72,9 @@ function compareScores(a, b) {
   }
 }
 console.log(usersDescending);
+
+exercise(6);
+
+let scoreTotal = users.reduce((acc,i) => acc + i.score, 0);
+
+console.log(`Total Combined Score: ${scoreTotal}` points);
